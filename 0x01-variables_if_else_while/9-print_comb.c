@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -13,13 +11,13 @@ int main(void)
 
 	while (num <= 9)
 	{
-		putchar(num + "0");
+		putchar(num + '0');
 		if (num == 9)
 			break;
-		putchar(",");
-		putchar(" ");
-		num++
+		putchar(',');
+		putchar(' ');
+		num++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
