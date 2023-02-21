@@ -1,16 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - main function
  *
  * Return: 0
 */
 int main(void)
 {
-	char alph;
+	int s = 97;
+	int e = 122;
 
-	for (alph = "a"; alph <= "z"; alph++)
-		putchar(alph);
+	while (s <= e)
+	{
+		putchar(s);
+		s++;
+	}
 	putchar("\n");
 	return (0);
 }
