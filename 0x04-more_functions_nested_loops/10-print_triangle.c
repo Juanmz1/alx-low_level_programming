@@ -10,7 +10,6 @@
 
 void print_triangle(int size)
 {
-	int row, hashes, space;
 
 	if (size <= 0)
 	{
@@ -18,7 +17,9 @@ void print_triangle(int size)
 	}
 	else
 	{
-		 for (row = 1; row <= size; row++)
+		int row, hashes, space;
+
+		for (row = 1; row <= size; row++)
 		{
 			for (spaces = size - row; spaces >= 1; spaces--)
 			{
