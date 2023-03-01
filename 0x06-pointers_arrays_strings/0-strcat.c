@@ -1,19 +1,25 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
  * *_strcat - concatenates two strings
- * @dest: appending the destination string
- * @src: appending the source string
+ * @dest: First parameter
+ * @src: Second parameter
  *
- * Return: 0
+ * Return: String
 */
 char *_strcat(char *dest, char *src)
 {
-	char dest[] = "Hello";
-	char src[] = "World";
+	int len = 0;
+	int i;
 
-	_putchar("Concatenated String: %s\n", strcat(dest, src));
-	return (0);
+	while (dest[len])
+		dest++;
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[len] = src[i];
+		len += 1;
+	}
+	dest[len] = '\0';
+	return (dest);
 }
+
