@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	char *flag;
-	int i, n, sum;
+	int i, n, sum = 0;
 
 	if (argc < 2)
 	{
