@@ -1,6 +1,7 @@
 #ifndef LISTS_H
-#define LIST_H
+#define LISTS_H
 
+#include <stddef.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
