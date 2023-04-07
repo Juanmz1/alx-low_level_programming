@@ -4,7 +4,7 @@
 
 /**
  * append_text_to_file - function that appends test at the end of a file
- * @filaname: pointer to a const char containing the name of the file
+ * @filename: pointer to a const char containing the name of the file
  * @text_content: is a null terminated string to add at the end of the file
  * Return: Null if it fails
 */
@@ -32,7 +32,6 @@ int append_text_to_file(const char *filename, char *text_content)
 			return (-1);
 		}
 	}
-	close(read);
-	return(1);
+	return (1);
 }
 
