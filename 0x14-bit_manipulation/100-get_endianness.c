@@ -6,11 +6,12 @@
 */
 int get_endianness(void)
 {
-	unsigned int i = 0x123;
-	char * ptr = &i;
-
-	if (i == 0x3)
+	unsigned int i;
+	char *ptr;
+	
+	if (i == 1)
 	{
+		ptr = (char *)&i;
 		return (1);
 	}
 	else
