@@ -5,23 +5,21 @@
 */
 void print_binary(unsigned long int n)
 {
-	unsigned long int current;
-	int i, count = 0;
+	unsigned long int rem = 1;
+	int i = 0;
 
-	for (i = 63; i >= 0; i--)
+	rem <<= (sizeof(unsigned long int * 8) - 1);
+
+	while (rem > 0)
 	{
-		current = n >> 1;
-
-		if (current & 1)
+		if (n & rem)
 		{
 			_putchar('1');
-			count++;
 		}
-		else if (count)
+		else
 		{
-			_putchar("0");
+			_putchar('0');
 		}
+		rem >>= 1;
 	}
-	if (!count)
-		_putchar("0");
 }
