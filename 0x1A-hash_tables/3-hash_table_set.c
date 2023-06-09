@@ -4,7 +4,7 @@
  * free_node - free a hash node
  * @file: pointer to hash node
  */
-void free_node(hash_node_t *data)
+void free_node(hash_node_t *file)
 {
 	free(file->key);
 	free(file->value);
