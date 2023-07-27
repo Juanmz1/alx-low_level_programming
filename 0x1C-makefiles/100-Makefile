@@ -8,12 +8,13 @@ CFLAGS = -wall -werror -wextra -pedantic
 
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-clean :
+
+clean:
 	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
-fclean : clean oclean
+fclean: clean oclean
 
-re : fclean all
+re: fclean all
